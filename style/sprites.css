@@ -1,0 +1,75 @@
+footer .fiocruz, footer .ufms, footer .governo, footer .ministeriosaude, footer .segets, footer .unasus{
+	background: url(../images/logo-footer-sprites.png) no-repeat;
+    border: none;
+    margin: 0px 15px 10px 15px;
+    zoom: 75%;
+}
+
+footer .fiocruz{
+	background-position: -260px -62px ;
+	width: 110px;
+	height: 60px;
+}
+
+
+footer .ufms{
+	background-position: -260px -135px ;
+	width: 110px;
+	height: 60px;
+}
+
+footer .governo{
+	background-position: -108px -62px ;
+	width: 150px;
+	height: 60px;
+}
+
+footer .ministeriosaude{
+	background-position: 0 -57px ;
+	width: 89px;
+	height: 60px;
+}
+
+footer .segets{
+	background-position: -168px 0;
+	width: 193px;
+	height: 60px;
+}
+
+footer .unasus{
+	background-position: 0 0;
+	width: 161px;
+	height: 60px;
+}
+
+
+.control-btn-play, .control-btn-pause {
+	background: url(../images/logo-video-sprites.png) no-repeat;
+    border: none;
+    background-color: #000000;
+}
+
+.control-btn-pause:hover {
+	background-position: -54px 0;
+	width: 24px;
+	height: 24px;
+}
+
+.control-btn-pause {
+	background-position: -82px 0;
+	width: 24px;
+	height: 24px;
+}
+
+.control-btn-play:hover {
+	background-position: 0 0;
+	width: 24px;
+	height: 24px;
+}
+
+.control-btn-play {
+	background-position: -27px 0;
+	width: 24px;
+	height: 24px;
+}
+

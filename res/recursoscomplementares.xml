@@ -1,0 +1,13 @@
+<unasusapp>
+    <recursoscomplementares>
+        <unidade>001</unidade>
+        
+        <recurso>
+            <nome>Guia médico</nome>
+            <tipo>pdf</tipo>
+            <descricao>teste</descricao>
+            <link>linkdoarquivo.pdf</link>
+        </recurso>
+        
+    </recursoscomplementares>
+</unasusapp>

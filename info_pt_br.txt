@@ -1,0 +1,73 @@
+Pacote padrão UNA-SUS de conteúdo em HTML5
+Criado por: Universidade Aberta do SUS/Secretaria Executiva
+
+Para utilização padronizada visando distribuição e utilização de ofertas de interesse da UNA-SUS. Estamos estudando um formato base padrão de empacotamento destes recursos de modo a facilitar a reutilização do mesmo.
+Pontos importantes:
+
+1. O pacote deve ser organizado primariamente em pastas com nomes sugestivos, exemplo: imagens, scripts, fontes (tipográficas), estilos, vídeos, bibliotecas (libs), em inglês ou português de modo a facilitar o reconhecimento rápido do que foi utilizado no recurso.
+
+2. A utilização de subpastas é fortemente sugerida para organizar o conteúdo, por exemplo a pasta bibliotecas, ao se utilizar bibliotecas de terceiros, ou mesmos diversas bibliotecas próprias, utilizar uma subpasta para cada biblioteca, de forma a ficar clara a dependência. 
+
+3. O pacote deve estar todo contido em uma pasta (com subpastas, vide item 1 e 2), todas as dependências devem estar contidas neste pacote, ou seja, todos os recursos utilizados, mesmo que de terceiros (neste caso o item utilizado deve permitir sua redistribuição no pacote). Isso inclui tudo mesmo até mesmo as fontes tipográficas utilizadas. O Pacote só pode ter referências externas de material que seja terciário/ou complementar ao bom uso do recurso, ou seja, em caso de uso off-line, estes recursos não podem fazer falta.
+
+4. O pacote deve possuir na pasta principal um arquivo de inicialização, ou seja, um arquivo de referência para acesso ao recurso, por padrão deve-se utilizar o nome de index.html (notação já tradicional).
+
+5. O pacote pode possuir um arquivo info_pt_br.txt, com informações básicas sobre o pacote e sua utilização, restrições etc. Para informações em outros idiomas utilizar o mesmo padrão de nomes: Exemplo: info_en.txt, info_fr.txt, info_es.txt.
+
+6. Para oferta em diversas condições, sugerimos que o pacote contenha uma subpasta da raiz, chamada thumbnails, onde deverão ser colocadas imagens para uso em divulgação do pacote, com nomenclatura própria a ser seguida facilitando processamento automático, na falta deste será utilizado uma imagem padrão com o logo da UNA-SUS:
+Imagem em formato PNG, com possibilidade de uso de transparência, com pixels entre 128 e 512, para a menor dimensão, exemplos:
+thumbnailt_169.png  (imagem com relação de aspecto de 16:9) transparente.
+thumbnail_169.png  (imagem com relação de aspecto de 16:9) não transparente.
+thumbnailt_43.png  (imagem com relação de aspecto de 4:3) transparente.
+thumbnailt_11_tr.png  (imagem com relação de aspecto de 1:1, quadrada) transparente.
+Imagem em formato SVG, vetorial, exemplos:
+thumbnail_169.svg (imagem com relação de aspecto de 16:9)
+thumbnail_43.svg (imagem com relação de aspecto de 4:3)
+thumbnail_11.svg (imagem com relação de aspecto de 1:1)
+
+8. Todos os arquivos textuais devem ser desenvolvidos utilizando codificação UTF-8 permitindo uma padronização e futura internacionalização quando da tradução de determinado recurso.
+
+9. Não utilizar, formatos proprietários de imagens, áudios ou vídeos, sem que seja oferecida uma alternativa em formato aberto. De preferência a utilização de um conjunto de recursos, que possam ser visualizados em uma gama grande de dispositivos/visualizadores, para isso acompanhe a evolução das especificações HTML5.
+
+10. Deve-se utilizar técnicas de persistência de dados, utilizando LocalStorage, de modo a permitir que diversas formas de oferta de conteúdo possam interagir com esta especificação no quesito persistência de dados (Usada por exemplo para a manutenção do progresso do usuário dentro deum conteúdo interativo).
+
+11. Deve-se utilizar uma padronização nos nomes do vídeos e áudios de modo a ficar claro a disponibilização de múltiplas fontes de um mesmo conteúdo, exemplo, se temos um vídeo com a entrevista do senhor José, em vários formatos e definições:
+video_entrevista_jose_1080p.mp4  (formato mp4 em alta definição, 1080 pixels progressivo)
+video_entrevista_jose_1080p.ogg  (formato ogg em alta definição, 1080 pixels progressivo)
+video_entrevista_jose_720p.mp4  (formato mp4 em definição padrão, 720 pixels progressivo)
+video_entrevista_jose_1080i.ogg  (formato ogg em alta definição, 1080 pixels interlaçado)
+
+12. Não utilizar, plug-ins proprietários.
+
+13. Recomenda-se a leitura atenta das especificações da W3C, que inclui vários tópicos não normativos mas que são de grande valia para a construção de conteúdos de qualidade.
+
+14. Recomenda-se a utilização de um design mais neutro que permita a reutilização do recurso em várias condições.
+
+15. Com uma gama cada vez maior e diversificada de dispositivos e resoluções de tela, deve-se utilizar técnicas para deixar o recurso responsivo para garantir o funcionamento do recurso em diferentes dispositivos. Indique sempre no arquivo de informações as condições de resposta de seu recurso. 
+
+15. Os pacotes desenvolvidos devem ser depositados no ARES – Acervo de Recursos Educacionais em Saúde, da UNA-SUS. De modo que teremos além do pacote todo um conjunto de informações de catalogação do mesmo. Para isso a pasta do recurso deve ser compactada em formato ZIP, sendo o arquivo resultante renomeado para “<nomedopacote>.ppu”, ou seja, ter a extensão “ppu”, para indicar se tratar de um pacote padrão UNA-SUS.
+
+17. Para ficar mais claro, o arquivo “PPU”, ao ser descompactado deve gerar uma pasta com o conteúdo do pacote, aqui deve-se ter o cuidado para que o pacote gere a pasta e não uma pasta dentro de outra pasta. Exemplo de uma estrutura gerada:  
+Arquivo dengue_2013.ppu, ao ser descompactado deve-se obter (em negrito as pastas e subpastas):
+dengue_2013
+	info_pt_br.txt
+	index.html
+	thumbnails
+		thumbnailt_169.png
+		thumbnail_169.svg
+	libs
+		jquery
+			jquery.js
+	css
+		default.css
+	file1.html
+	file2.html
+	images
+		foto1.jpg
+		arte1.svg
+		arte2.png
+	videos
+		video1_HD.mp4
+		video1_SD.mp4
+video1_HD.ogg
+video1_SD.ogg
