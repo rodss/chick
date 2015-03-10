@@ -1,10 +1,191 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
     <title></title>
+    <meta name="description" content="Chikungunya">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="copyright" content="Universidade Aberta do SUS">
+    <link rel="stylesheet" href="../../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/themeunasus.css">
+    <script src="../../libs/jquery-1.10.2.min.js"></script>
+    <script src="../../libs/unveil.js"></script>
+    <script>
+        // UNVEIL ACTIONS
+        $(document).ready(function() {
+            $("img").unveil();
+        });
+    </script>
 </head>
+
 <body>
 
+<!-- Atualizacao do Navegador !-->
+<!--[if lt IE 7]>
+<p class="browsehappy">
+    Você está usando uma versão do navegador <strong>desatualizada</strong>. Acesse
+    <a href="http://browsehappy.com/">esta página</a>
+    para melhorar a sua experiência.
+</p>
+<![endif]-->
+
+<!-- Jumbotron !-->
+<div class="head-jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 header-image hidden-xs hidden-sm"></div>
+            <div class="col-md-10">
+                <p id="titulodocurso"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu !-->
+<header id="menudocurso" class="navbar navbar-static-top" role="banner"></header>
+
+<!-- Conteudo !-->
+<div class="exames-topo hidden-xs">
+    <div class="exames-topo-bloco" data-spy="affix" data-offset-top="97" data-offset-bottom="200">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-6 text-with-image-title">
+                        <img class="" src="../../images/homem.png" style="width: 80px;">
+                        <span class="clearfix-image-top"></span>
+                        <span class="muted hidden-xs">CASO 4: </span>TRANSMISSÃO TRANSPLACENTÁRIA
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <p>
+                Caroline tem 25 anos e mora em Campo Grande/MS e ficou grávida pela primeira vez, a gravidez foi muito
+                desejada e cercada de cuidados. Todas as consultas de pré-natal foram efetuadas e os exames todos foram
+                normais. Durante o as últimas semanas da sua gravidez foram detectados casos de Chikungunya no bairro de
+                Caroline, e em menos de 1 semana ela também adquiriu a doença, iniciando o quadro febril dois dias antes
+                de iniciar o trabalho de parto.
+            </p>
+            <p class="objetivo">
+                Objetivo: Conhecer as complicações da patologia na gestação.
+            </p>
+            <h3>
+                1- A combinação de gravidez e Chikungunya pode:
+            </h3>
+            <hr>
+            <div class="panel-group" id="accordion">
+
+                <!-- Alternativa A !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse1">
+                    A) Não há qualquer relato de problemas durante a gravidez em decorrência do Chikungunya.
+                </button>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta01">Tente Novamente!</h4>
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse1">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternativa B !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse2">
+                    B) Assim como a dengue, o CHIK pode causar abortamento.
+                </button>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta02">Tente Novamente!</h4>
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse2">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternativa C !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse3">
+                    C) O principal problema em relação à gestação no CHIK é a má formação fetal que ocorre somente se a
+                    gestante adquirir a doença no 1º trimestre.
+                </button>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta03">Tente Novamente!</h4>
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse3">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternativa D !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse4">
+                    D) Somente haverá problemas em relação à gravidez se houver co-infeccção CHIK e Dengue na gestante.
+                </button>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta04">Tente Novamente!</h4>
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse4">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternativa E !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse5">
+                    E) Há o risco de transmissão vertical durante o trabalho de parto caso a gestante tenha viremia.
+                </button>
+                <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta05">Certo!</h4>
+                        A doença pode ser transmitida para o concepto em casos em que a gestante adquira a infecção e se
+                        encontre virêmica durante o trabalho de parto. Pode ocorre a transmissão transplacentária e a
+                        ocorrência da doença na maior parte dos recém nascidos.
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse5">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width:100%;text-align:center;">
+                <span class="label label-danger">
+                    <a href="caso4_1.html">01</a>
+                </span>&nbsp;
+                <span class="label label-default">
+                    <a href="caso4_2.html">02</a>
+                </span>&nbsp;
+            </div>
+            &nbsp;
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script>
+    var _UNID_ACTIVE_ = 2;
+</script>
+<script src="../../libs/trocas.js"></script>
+<script src="../../libs/curso.js"></script>
+<script src="../../libs/bootstrap.min.js"></script>
 </body>
+
 </html>

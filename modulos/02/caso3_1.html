@@ -1,10 +1,193 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title> titulo de teste</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="Chikungunya">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <meta name="copyright" content="Universidade Aberta do SUS">
+    <link rel="stylesheet" href="../../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style/themeunasus.css">
+    <script src="../../libs/jquery-1.10.2.min.js"></script>
+    <script src="../../libs/unveil.js"></script>
+    <script>
+        // UNVEIL ACTIONS
+        $(document).ready(function() {
+            $("img").unveil();
+        });
+    </script>
 </head>
+
 <body>
 
+<!-- Atualizacao do Navegador !-->
+<!--[if lt IE 7]>
+<p class="browsehappy">
+    Você está usando uma versão do navegador <strong>desatualizada</strong>. Acesse
+    <a href="http://browsehappy.com/">esta página</a>
+    para melhorar a sua experiência.
+</p>
+<![endif]-->
+
+<!-- Jumbotron !-->
+<div class="head-jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 header-image hidden-xs hidden-sm"></div>
+            <div class="col-md-10">
+                <p id="titulodocurso"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu !-->
+<header id="menudocurso" class="navbar navbar-static-top" role="banner"></header>
+
+<!-- Conteudo !-->
+<div class="exames-topo hidden-xs">
+    <div class="exames-topo-bloco" data-spy="affix" data-offset-top="97" data-offset-bottom="200">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="col-xs-6 text-with-image-title">
+                        <img class="" src="../../images/homem.png" style="width: 80px;">
+                        <span class="clearfix-image-top"></span>
+                        <span class="muted hidden-xs">CASO CLÍNICO 3: </span> &nbsp;CRÔNICA
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <p>
+                Pedro de 67 anos, residente no Rio de Janeiro, ex fumante e portador de DPOC, viajou para Feira de
+                Santana duas semanas antes de se apresentar ao médico de família da Unidade Básica de Saúde próxima à
+                sua casa com quadro súbito de febre (40 °C) acompanhada de mialgia, cefaleia e discreta atralgia,
+                iniciado no dia anterior. Ao exame encontrava-se febril, PA 140X90 mm Hg, FC: 110 bpm.
+                <span class="duvida">como é portador de DPOC, não seria interessante descrever o exame torácico?</span>
+                O exame das articulações demonstra dor a compressão e à movimentação passiva das articulações dos punhos
+                e metacarpofalangeanas bilateralmente, com discreto edema. A dor piorou progressivamente, tornando
+                impossível a execução das atividades cotidianas. No momento da consulta o Rio de Janeiro enfrentava uma
+                epidemia de dengue. Após 1 mês de doença o sr Pedro ainda apresentava a dor articular com regressão da
+                febre <span class="atencao">( Avaliar se coloca na própria questão ? Deve ser inserida a informação em
+                segundo plano: A doença crônica é definida por sintomas que persistem mais de três meses. A frequência
+                de pessoas relatando sintomas persistentes varia substancialmente por estudo e pela quantidade de tempo
+                decorrido entre o seu início e o tratamento. Estudos da África do Sul mostraram que 12%-18% dos
+                pacientes terão sintomas persistentes de 18 meses a 3 anos. Em estudos mais recentes na Índia, a
+                proporção de pacientes com sintomas persistentes dez meses após o início da doença foi de 49%. Dados da
+                Ilha Réunion demonstraram que 80%-93% dos pacientes se queixam de sintomas persistentes três meses após
+                o início da doença; o que diminui para 57% aos 15 meses e 47% aos dois anos. (F. Simone, Departamento de
+                Doenças Infecciosas e Medicina Tropical, Hospital Militar de Laveran, Paris, França, comunicação
+                pessoal).</span>
+            </p>
+            <p>
+                <span class="atencao">O sintoma persistente mais comum é artralgia inflamatória nas mesmas articulações
+                afetadas durante os estágios agudos. Geralmente, não há mudança significante em testes laboratoriais
+                e nas radiografias das áreas afetadas. Porém, alguns indivíduos desenvolvem artropatia/artrite
+                semelhante à artrite reumatoide ou artrite psoriática. Outros sintomas da fase crônica da doença
+                podem incluir cansaço e depressão. Fatores de risco para a não recuperação são: idade avançada
+                (maiores de 65 anos), problemas de articulação preexistentes e doenças agudas mais graves).</span>
+                Ele continuou em acompanhamento com a equipe de saúde da família e em 12 semanas ainda continuava se
+                queixando de dores articulares de forte intensidade.
+            </p>
+            <p class="objetivo">
+                Objetivo: Conhecer critérios de internação.
+            </p>
+            <h3>
+                1- O Sr. Pedro apresenta algum critério de internação?
+            </h3>
+            <hr>
+            <div class="panel-group" id="accordion">
+
+                <!-- Alternativa A !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse1">
+                    A) Pacientes com idade superior a 65 a são considerados como grupo de risco, deve ser internado caso
+                    haja descompensação das patologias de base.
+                </button>
+                <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta01">Certo!</h4>
+                        O paciente é considerado como grupo de risco, deve ser avaliado e observado de forma a se
+                        corrigir descompensações das patologias de base e indicar a internação caso apresentem os
+                        critérios de gravidade como exposto do fluxograma de atendimento (ex. insuficiência
+                        respiratória, vômitos persistentes, crise convulsiva etc.) <span class="plano2">(Inserir em
+                        segundo plano o fluxograma)</span>
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse1">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternativa B !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse2">
+                    B) Pacientes com comorbidades são considerados como grupo de risco, devendo ser internados mesmo se
+                    não houver descompensação da patologia de base.
+                </button>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta02">Tente Novamente!</h4>
+                        Incorreto, a internação deve ser indicado somente se critérios clínicos indicarem a necessidade
+                        de internação.
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse2">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternativa C !-->
+                <button type="button" class="btn-block btn-question" data-toggle="collapse" data-parent="#accordion"
+                        href="#collapse3">
+                    C) Paciente não é caracterizado como pertencente ao grupo de risco.
+                </button>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <h4 id="resposta03">Tente Novamente!</h4>
+                        <div class="itens-menu-collapse">
+                            <button type="button" class="btn btn-default" data-toggle="collapse"
+                                    data-parent="#accordion" href="#collapse3">Fechar e ver outras alternativas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width:100%;text-align:center;">
+                <span class="label label-danger">
+                    <a href="caso3_1.html">01</a>
+                </span>&nbsp;
+                <span class="label label-default">
+                    <a href="caso3_2.html">02</a>
+                </span>&nbsp;
+                <span class="label label-default">
+                    <a href="caso3_3.html">03</a>
+                </span>&nbsp;
+            </div>
+            &nbsp;
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+<footer id="footer"></footer>
+<script>
+    var _UNID_ACTIVE_ = 2;
+</script>
+<script src="../../libs/trocas.js"></script>
+<script src="../../libs/curso.js"></script>
+<script src="../../libs/bootstrap.min.js"></script>
 </body>
+
 </html>
